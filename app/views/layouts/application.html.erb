@@ -12,9 +12,14 @@
   <body>
     <div style="background: silver; padding: 16px">
       <ul>
+        <li><%= link_to "Home", root_path %></li>
         <li><%= link_to "About Us", about_us_path %></li>
         <li><%= link_to "Contact Us", contact_path %></li>
       </ul>
+      <form action="/contact" method="get">
+        <input type="text" name="member" placeholder="Who are you looking for?">
+        <input type="submit">
+      </form>
     </div>
     <%= yield %>
   </body>

@@ -14,7 +14,7 @@ class PagesController < ApplicationController
     @members = ['Ron', 'Leslie', 'Tom', 'April', 'Andy', 'Ben']
 
     if search.present?
-      @members = @members.select { |name| name == search }
+      @members = @members.select { |name| name.start_with?(search) }
     end
 
   end
