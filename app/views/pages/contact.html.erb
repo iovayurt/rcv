@@ -1,2 +1,7 @@
-<h1>Contact</h1>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel nobis sequi nulla laudantium provident maxime culpa quia? Amet, ad laudantium placeat excepturi voluptatibus iusto veniam, tenetur vel architecto nesciunt expedita?</p>
+<h1>Contact us</h1>
+
+<ul>
+  <% @members.each do |name| %>
+    <li><%= name %></li>
+  <% end %>
+</ul>
